@@ -1,17 +1,21 @@
-const inputYear = document.querySelector("input");
+const inputYear = document.querySelector("#birth");
+const inputName = document.querySelector("#name");
 
 document.forms[0].addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const inputYearValue = Number(inputYear.value);
+  const inputDateBirth = inputYear.value.split("-")[0];
+  const nameValue = inputName.value;
 
-  if (!inputYearValue) {
-    document.querySelector(".output").innerHTML = `<h3>Can not blank..</h3>`;
-  } else if (inputYearValue % 4 === 0) {
-    document.querySelector(".output").innerHTML = `<img src="1.webp" alt="">`;
+  if (!inputDateBirth || !nameValue) {
+    document.querySelector(
+      ".output"
+    ).innerHTML = `<p> Hey! field can not balnk.</p>`;
+  } else if (inputDateBirth % 4 === 0) {
+    document.querySelector(".output").innerHTML = `<p> Wow! ${nameValue} You are bron in leap year. </p>`;
   } else {
     document.querySelector(
       ".output"
-    ).innerHTML = `<h3>Sorry! This is a not leap year...</h3>`;
+    ).innerHTML = `<p>Sorry! This is a not leap year...</p>`;
   }
 });
