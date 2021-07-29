@@ -12,7 +12,7 @@ document.forms[0].addEventListener("submit", (e) => {
       ".output"
     ).innerHTML = `<p> Hey! field can not balnk.</p>`;
   } else if (inputDateBirth % 4 === 0) {
-    document.querySelector(".output").innerHTML = `<p> Wow! ${nameValue} You are bron in leap year. </p>`;
+    document.querySelector(".output").innerHTML = `<p> Wow! <Strong>${nameValue}</strong> You are bron in leap year. </p>`;
   } else {
     document.querySelector(
       ".output"
