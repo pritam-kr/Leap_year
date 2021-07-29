@@ -5,7 +5,13 @@
     box-sizing: border-box;
 }
 body{
-    background-color:#232d6e;
+    background-color:#FCBCBB;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
 }
 .container{
     display: flex;
@@ -15,19 +21,19 @@ body{
     height: 100vh;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0; 
 }
 .leap-container{
     width: 80%;
     padding: 30px;
     height: 80vh;
     border: 0px solid black;
-    border-radius: 200px;
+    border-radius: 5px;
     display: flex;
-    justify-content: space-between;
+    /*   */
     flex-direction: column;
     align-items: center;
-    background-color:#1A2255;
+    background-color:#FCBCBB;
 }
 
 form{
@@ -38,20 +44,32 @@ form{
 form button{
     padding: 9px 30px;
     cursor: pointer;
-    border-radius: 10px;
     margin: 10px 0;
-    border: 0.3px solid ;
 }
 input{
     width: 100%;
     padding: 10px;
-    border-radius: 10px;
     border: none;
 }
 input:focus{
     outline: none;
 }
-
+.output{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.output img{
+    width: 50%; height: 200px;
+}
+.output p {
+    margin: 20px 0 ;
+    padding: 20px;
+}
+.output h3{
+    margin: 20px 0;
+}
 footer {
     display: flex;
     justify-content: center;
